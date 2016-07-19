@@ -24,7 +24,7 @@ add_action('init', 'alphaindex_alpha_tax');
 function alphaindex_save_alpha( $post_id ) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 	return;
-	//only run for form posts
+	//only run for posts
 	$slug = 'post';
 	$letter = '';
 	// If this isn't a post, don't update it.
